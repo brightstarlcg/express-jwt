@@ -1,0 +1,29 @@
+@url=http://localhost:3001/api
+@json=Content-Type: application/json
+
+###
+
+GET {{url}}
+
+
+###注册
+POST {{url}}/register
+{{json}}
+
+{
+    "username":"yy34",
+    "passworld":"333345354"
+}
+
+###登录
+POST {{url}}/login
+{{json}}
+
+{
+    "username":"yy34",
+    "passworld":"333345354"
+}
+
+###个人信息
+GET  {{url}}/message
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTNmMTMxMzBjNWY0MDQ0ODdiOTBlOSIsImlhdCI6MTU2NTc4NDE5NX0.DbkENumB2PVxEZJMgazsRTwlTNKgqYRshTnppfzJgiw
